@@ -55,3 +55,7 @@ nav.navbar, .navbar-default {
 .navbar-brand {
     color: floralwhite  !important;
 }
+
+li { 
+  display:inline-block; 
+}

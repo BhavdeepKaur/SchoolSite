@@ -8,7 +8,8 @@ import './Home.css';
 export default class Home extends Component {
   render() {
     return (
-      <div id = "maindiv" className = "container">
+      <div id = "maindiv">  
+      <div  className = "container">
         <Jumbotron>
         <font color="BLACK">
         <marquee behavior="alternate" direction="up" width="80%">
@@ -150,6 +151,7 @@ export default class Home extends Component {
                 </Col>
             </Row>
 		</div>
+      </div>
       </div>
     )
   }
