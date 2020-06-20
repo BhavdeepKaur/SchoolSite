@@ -14,7 +14,9 @@ import Footer from './Footer';
 
 const mapStateToProps = state => {
   return {
-    leaders: state.leaders
+    leaders: state.leaders,
+    faculty: state.faculty,
+    notices: state.notices
   }
 }
 
@@ -31,18 +33,18 @@ class Main extends Component {
 
 
                 <CustomNavbar/>
-		        <Switch>
-		            <Route exact path="/home" component={Home} />
+		            <Switch>
+		                <Route exact path="/home" component={Home} />
                     <Route path="/home" component={Home} /> 
                     <Route path="/about" component={() => <About leaders={this.props.leaders} />} />} /> 
-                    <Route path="/news" component={News} />
-			        <Route path="/contact" component={Contact} />
+                    <Route path="/news" component={() => <News notices={this.props.notices} />} />} />
+			              <Route path="/contact" component={Contact} />
                     <Route path="/curriculum" component={Curriculum} />
-                    <Route path="/faculties" component={Faculties} />
+                    <Route path="/faculties" component={() => <Faculties faculty={this.props.faculty} />} />} />
                     <Route path="/facilities" component={Facilities} />
                     <Route path="/tc" component={TC} />
                     <Redirect to="/home" />
-		        </Switch>
+		            </Switch>
                 <Footer />
             </div>
         );

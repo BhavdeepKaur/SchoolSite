@@ -36,17 +36,17 @@ export default class CustomNavbar extends Component {
 					<li><NavItem >
                         <NavLink className="nav-link"  to='/contact'><span className="fa fa-address-card fa-lg">
                             </span> Contact Us</NavLink>
-                    </NavItem></li></ul>
+                    </NavItem></li>
                     
                    
-                    <NavDropdown title="Academics" id="basic-nav-dropdown">
+                    <li><NavDropdown title="Academics" id="basic-nav-dropdown">
                         <NavDropdown.Item href="/curriculum">Curriculum</NavDropdown.Item>
                         <NavDropdown.Item href="/faculties">Faculties</NavDropdown.Item>
-                    </NavDropdown>
-                    <NavDropdown title="Others" id="basic-nav-dropdown">
+                    </NavDropdown></li>
+                    <li><NavDropdown title="Others" id="basic-nav-dropdown">
                         <NavDropdown.Item href="/facilities">Facilities</NavDropdown.Item>
                         <NavDropdown.Item href="/tc">Transfer Certificate</NavDropdown.Item>
-                    </NavDropdown>
+                    </NavDropdown></li></ul>
                     
                 </Nav>
             </Collapse>

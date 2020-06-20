@@ -28,6 +28,7 @@ function About(props) {
     });
 
     return(
+        <div id = "hey">
         <div className="container">
             <div className="row">
                 <Breadcrumb>
@@ -91,6 +92,7 @@ function About(props) {
                     </Media>
                 </div>
             </div>
+        </div>
         </div>
     );
 }
