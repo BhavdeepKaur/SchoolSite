@@ -16,7 +16,8 @@ const mapStateToProps = state => {
   return {
     leaders: state.leaders,
     faculty: state.faculty,
-    notices: state.notices
+    notices: state.notices,
+    facility: state.facility
   }
 }
 
@@ -41,7 +42,7 @@ class Main extends Component {
 			              <Route path="/contact" component={Contact} />
                     <Route path="/curriculum" component={Curriculum} />
                     <Route path="/faculties" component={() => <Faculties faculty={this.props.faculty} />} />} />
-                    <Route path="/facilities" component={Facilities} />
+                    <Route path="/facilities" component={() => <Facilities facility={this.props.facility} />} />} />
                     <Route path="/tc" component={TC} />
                     <Redirect to="/home" />
 		            </Switch>

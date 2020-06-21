@@ -1,0 +1,12 @@
+.middle {
+    text-align: center;
+    font: "Courier";
+    color: gray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dis {
+    background-color:#1e73be;
+    padding:40px;
+}

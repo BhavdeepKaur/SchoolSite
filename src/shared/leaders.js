@@ -14,7 +14,7 @@ export const LEADERS = [
       image: '/assets/person-2.jpg',
       designation: 'Principal',
       abbr: 'Dean',
-        featured: false,
+      featured: false,
       description: 'Our Dean, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of teaching methods. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!'
     },
     {
